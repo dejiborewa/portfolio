@@ -4,7 +4,6 @@ import Image from "next/image";
 import Layout from "../components/layout";
 import BW2 from "../public/assets/dejiBW2.webp";
 
-
 const Main = styled.main`
   background: linear-gradient(
     210deg,
@@ -63,7 +62,7 @@ const ImageContainer = styled.div`
   height: calc(100% - 210px);
   /* height: 200px; */
   /* height: 100%; */
-  box-shadow: 0px 3px 5px 2px #c1c1c1;
+  box-shadow: 0px 3px 10px 3px #c1c1c1;
 
   @media (min-width: 768px) {
     width: 50%;
@@ -109,6 +108,7 @@ const Home: NextPage = () => {
               className=""
               objectFit="cover"
               objectPosition="top"
+              alt=" ayodeji's image"
             />
           </ImageContainer>
 

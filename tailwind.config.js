@@ -11,7 +11,8 @@ module.exports = {
         rufous: "#A72608",
       },
       fontFamily: {
-        mono: ["Lora", "serif"],
+        lora: ["Lora", "serif"],
+        bebas: ["Bebas Neue", "cursive"],
       },
       boxShadow: {
         deep: "0px 3px 3px 5px #2D2A32",

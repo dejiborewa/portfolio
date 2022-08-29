@@ -4,7 +4,7 @@
 
 @layer components {
   .bigText {
-    @apply font-black font-mono text-[26px] leading-6 md:text-[72px] md:leading-[54px] lg:text-[118px] lg:leading-[68px];
+    @apply font-black font-lora text-[26px] leading-[14px] md:text-[72px] md:leading-[54px] lg:text-[118px] lg:leading-[68px];
   }
 }
 
