@@ -4,77 +4,6 @@ import Image from "next/image";
 import Layout from "../components/layout";
 import BW2 from "../public/assets/dejiBW2.webp";
 
-const Main = styled.main`
-  background: linear-gradient(
-    210deg,
-    #090c02 20%,
-    #e6eed6 20% 21%,
-    #090c02 21% 80%,
-    #e6eed6 80% 81%,
-    #090c02 81% 100%
-  );
-`;
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 0.8em;
-  margin: 0.5em 0;
-
-  & > div {
-    line-height: 1.5;
-  }
-
-  & > :nth-child(even) {
-    text-align: right;
-
-    @media (min-width: 768px) {
-      text-align: unset;
-    }
-  }
-
-  @media (min-width: 768px) {
-    display: grid;
-    font-size: 14px;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 0.3em;
-
-    & > :nth-child(2) {
-      text-align: center;
-    }
-
-    & > :nth-child(3) {
-      text-align: center;
-    }
-
-    & > :nth-child(4) {
-      text-align: right;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 16px;
-  }
-`;
-
-const ImageContainer = styled.div`
-  width: 100%;
-  height: calc(100% - 210px);
-  /* height: 200px; */
-  /* height: 100%; */
-  box-shadow: 0px 3px 10px 3px #c1c1c1;
-
-  @media (min-width: 768px) {
-    width: 50%;
-    height: 200px;
-  }
-
-  @media (min-width: 1024px) {
-    width: 30%;
-    height: 230px;
-  }
-`;
-
 const Home: NextPage = () => {
   return (
     <Layout>
@@ -192,5 +121,74 @@ const Home: NextPage = () => {
     </Layout>
   );
 };
+
+const Main = styled.main`
+  background: linear-gradient(
+    209deg,
+    #089c02 20%,
+    #e5eed6 20% 21%,
+    #089c02 21% 80%,
+    #e5eed6 80% 81%,
+    #089c02 81% 100%
+  );
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  row-gap: -1.8em;
+  margin: -1.5em 0;
+
+  & > div {
+    line-height: 0.5;
+  }
+
+  & > :nth-child(even) {
+    text-align: right;
+
+    @media (min-width: 767px) {
+      text-align: unset;
+    }
+  }
+
+  @media (min-width: 767px) {
+    display: grid;
+    font-size: 13px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: -1.3em;
+
+    & > :nth-child(1) {
+      text-align: center;
+    }
+
+    & > :nth-child(2) {
+      text-align: center;
+    }
+
+    & > :nth-child(3) {
+      text-align: right;
+    }
+  }
+
+  @media (min-width: 1023px) {
+    font-size: 15px;
+  }
+`;
+
+const ImageContainer = styled.div`
+  width: 99%;
+  height: calc(99% - 210px);
+  box-shadow: -1px 3px 10px 3px #c1c1c1;
+
+  @media (min-width: 767px) {
+    width: 49%;
+    height: 199px;
+  }
+
+  @media (min-width: 1023px) {
+    width: 29%;
+    height: 229px;
+  }
+`;
 
 export default Home;
